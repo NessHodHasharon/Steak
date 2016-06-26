@@ -1,0 +1,9 @@
+c:\users\64l\documents\visual studio 2015\Projects\Steak\Steak\bin\Debug\Steak.exe.config
+c:\users\64l\documents\visual studio 2015\Projects\Steak\Steak\bin\Debug\Steak.exe
+c:\users\64l\documents\visual studio 2015\Projects\Steak\Steak\bin\Debug\Steak.pdb
+c:\users\64l\documents\visual studio 2015\Projects\Steak\Steak\obj\Debug\Steak.csprojResolveAssemblyReference.cache
+c:\users\64l\documents\visual studio 2015\Projects\Steak\Steak\obj\Debug\Steak.Main.resources
+c:\users\64l\documents\visual studio 2015\Projects\Steak\Steak\obj\Debug\Steak.Properties.Resources.resources
+c:\users\64l\documents\visual studio 2015\Projects\Steak\Steak\obj\Debug\Steak.csproj.GenerateResource.Cache
+c:\users\64l\documents\visual studio 2015\Projects\Steak\Steak\obj\Debug\Steak.exe
+c:\users\64l\documents\visual studio 2015\Projects\Steak\Steak\obj\Debug\Steak.pdb
