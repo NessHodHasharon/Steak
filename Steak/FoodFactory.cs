@@ -14,9 +14,10 @@ namespace Steak
         public Rectangle Food;
         public FoodFactory(Random randomFood)
         {
-            x = randomFood.Next(0, 280);
-            y = randomFood.Next(0, 290);
-            new SolidBrush(Color.Black);
+            Random rnd = new Random();
+            new SolidBrush(Color.White);
+            x = rnd.Next(0, 280);
+            y = rnd.Next(0, 290);
             width = 10;
             height = 10;
         }
@@ -27,8 +28,11 @@ namespace Steak
         }
         public void DrawFood(Graphics board)
         {
+            
             Food.X = x;
             Food.Y = y;
+            Food.Width = width;
+            Food.Height = height;
             board.FillRectangle(brush, Food);
         }
     }

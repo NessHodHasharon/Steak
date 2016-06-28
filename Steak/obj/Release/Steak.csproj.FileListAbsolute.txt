@@ -1,0 +1,8 @@
+C:\Users\64L\Documents\Visual Studio 2015\Projects\Steak\Steak\bin\Release\Steak.exe.config
+C:\Users\64L\Documents\Visual Studio 2015\Projects\Steak\Steak\bin\Release\Steak.exe
+C:\Users\64L\Documents\Visual Studio 2015\Projects\Steak\Steak\bin\Release\Steak.pdb
+C:\Users\64L\Documents\Visual Studio 2015\Projects\Steak\Steak\obj\Release\Steak.Main.resources
+C:\Users\64L\Documents\Visual Studio 2015\Projects\Steak\Steak\obj\Release\Steak.Properties.Resources.resources
+C:\Users\64L\Documents\Visual Studio 2015\Projects\Steak\Steak\obj\Release\Steak.csproj.GenerateResource.Cache
+C:\Users\64L\Documents\Visual Studio 2015\Projects\Steak\Steak\obj\Release\Steak.exe
+C:\Users\64L\Documents\Visual Studio 2015\Projects\Steak\Steak\obj\Release\Steak.pdb
