@@ -12,14 +12,16 @@ namespace Steak
         private int x, y, width, height;
         private SolidBrush brush;
         public Rectangle Food;
+
         public FoodFactory(Random randomFood)
         {
-            Random rnd = new Random();
-            new SolidBrush(Color.White);
-            x = rnd.Next(0, 280);
-            y = rnd.Next(0, 290);
+            
+            brush = new SolidBrush(Color.White);
+            x = randomFood.Next(0, 280);
+            y = randomFood.Next(0, 290);
             width = 10;
             height = 10;
+            Food = new Rectangle(x, y, width, height);
         }
         public void FoodLocation(Random randomFood)
         {
@@ -31,8 +33,7 @@ namespace Steak
             
             Food.X = x;
             Food.Y = y;
-            Food.Width = width;
-            Food.Height = height;
+            
             board.FillRectangle(brush, Food);
         }
     }

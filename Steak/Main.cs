@@ -12,22 +12,21 @@ namespace Steak
 {
     public partial class Main : Form
     {
+        Random randomLocation = new Random();
+        Graphics board;
+        SteakEaterManager manager = new SteakEaterManager();
+        FoodFactory factory;
+        bool left = true;
+        bool right = false;
+        bool up = false;
+        bool down = false;
+        int score = 0;
 
         public Main()
         {
             InitializeComponent();
             factory = new FoodFactory(randomLocation);
         }
-
-        Random randomLocation;
-        Graphics board;
-        SteakEaterManager manager;
-        FoodFactory factory;
-        bool left;
-        bool right;
-        bool up;
-        bool down;
-        int score = 0;
 
         private void Main_Load(object sender, EventArgs e)
         {
@@ -53,6 +52,11 @@ namespace Steak
                 timer1.Enabled = true;
                 SteakTitleLabel.Visible = false;
                 SpaceBarLabel.Visible = false;
+                RestartLabel.Visible = false;
+                right = true;
+                left = false;
+                up = false;
+                down = false;
                 scoreNumber.Text = "0";
             }
             if(e.KeyData == Keys.Down && up == false)
@@ -106,32 +110,33 @@ namespace Steak
             }
             this.Invalidate();
             Collision();
-            if (manager.GetSteakEater()[0].IntersectsWith(factory.Food)) ;
+            if (manager.GetSteakEater()[0].IntersectsWith(factory.Food)) 
             {
                 score += 1;
                 manager.MakeSteakEaterGrow();
                 factory.FoodLocation(randomLocation);
-            } }
-            public void Restart()
-            {
+            }
+        }
+        public void Restart()
+        {
             timer1.Enabled = false;
             MessageBox.Show("You ate it!");
             RestartLabel.Visible = true;
             manager = new SteakEaterManager();
-            }
+        }
         public void Collision()
         {
-            if (manager.GetSteakEater()[0].Y < 0 || manager.GetSteakEater()[0].Y < 0) ;
+            if (manager.GetSteakEater()[0].Y < 0 || manager.GetSteakEater()[0].Y < 0) 
             {
                 Restart();
             }
-            if (manager.GetSteakEater()[0].X < 0 || manager.GetSteakEater()[0].X > 280) ;
+            if (manager.GetSteakEater()[0].X < 0 || manager.GetSteakEater()[0].X > 280) 
             {
                 Restart();
             }
             for (int i = 1; i < manager.GetSteakEater().Length; i++) 
             {
-                if (manager.GetSteakEater()[0].IntersectsWith(manager.GetSteakEater()[i])) ;
+                if (manager.GetSteakEater()[0].IntersectsWith(manager.GetSteakEater()[i])) 
                 {
                     Restart();
                 }
